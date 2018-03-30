@@ -52,11 +52,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true
-    }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'list.html',
+    //   template: 'views/list.html',
+    //   inject: true
+    // }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {
@@ -66,6 +66,24 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       }
     ])
   ]
+})
+
+
+Object.keys(baseWebpackConfig.entry).forEach(function(name) {
+ // 每个页面生成一个html
+ var plugin = new HtmlWebpackPlugin({
+   // 生成出来的html文件名
+   filename:  name + '.html',
+   // 每个html的模版，这里多个页面使用同一个模版
+   template: 'views/' + name + '.html',
+   // 自动将引用插入html
+   inject: true,
+   // 每个html引用的js模块，也可以在这里加上vendor等公用模块
+   chunks: ['manifest', 'vendor', name],
+   // // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+   chunksSortMode: 'dependency',
+ });
+ devWebpackConfig.plugins.push(plugin);
 })
 
 module.exports = new Promise((resolve, reject) => {

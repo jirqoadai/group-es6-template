@@ -34,7 +34,7 @@ module.exports = {
     extensions: ['.js', '.json'],
     alias: {
       '@': resolve('src'),
-      'jquery': path.resolve(__dirname, 'jquery/src/jquery'),
+      'jQuery': path.resolve(__dirname, 'jquery/src/jquery'),
       'lodash': 'lodash'
     }
   },
@@ -71,19 +71,12 @@ module.exports = {
         }
       },
       {
-        test: require.resolve('jquery'),
-        use: {
-          loader: 'expose-loader',
-          options: '$'
-        }
-      },
-      {
         test: require.resolve('lodash'),
         use: {
           loader: 'expose-loader',
           options: '_'
         }
-      },
+      }
     ]
   },
   plugins: [
