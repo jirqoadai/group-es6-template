@@ -1,7 +1,8 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-const $ = window.$;
-const _ = window._;
+import $ from 'jquery';
+import _ from 'lodash';
+
 const console = window.console;
 
 $(() => {
