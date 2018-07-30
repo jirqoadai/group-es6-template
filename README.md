@@ -25,6 +25,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		- 折叠菜单
 		- metirial菜单
 		- dot menu（原点）
+		- 手风琴
+		- 底部悬浮&可滑动&自定义宽度
 	#### picker
 		- select
 		- 级联picker
@@ -58,9 +60,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		- vw布局
 		- rem布局
 	#### 文本样式
-		- 位置
-		- 标题
-		- 页眉
+		- 文章
 		- 分页
 		- 文章
 		- 页脚

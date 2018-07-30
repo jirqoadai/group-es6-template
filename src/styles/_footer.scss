@@ -1,0 +1,25 @@
+.footer {
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    text-align: center;
+    .footer-link {
+        color: #586C94;
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 .62em;
+        position: relative;
+        font-size: 14px;
+    }
+    .footer-text {
+        font-size: 12px;
+        padding: 0.34em;
+    }
+}

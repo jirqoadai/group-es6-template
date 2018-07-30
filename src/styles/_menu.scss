@@ -1,0 +1,33 @@
+.accordion {
+    overflow: hidden;
+    padding: 15px;
+    background: #fff;
+    .accordion-header {
+        position: relative;
+        z-index: 2;
+    }
+    .accordion-body {
+        display: none;
+        margin-top: 15px;
+        background: #fff;
+        position: relative;
+        z-index: 1;
+        transform: translate(0, -100%);
+    }
+}
+.active.accordion {
+    .accordion-header {
+        opacity: 0.7;
+    }
+    .accordion-body {
+        display: block;
+        transition: all 0.4s ease-in-out;
+        transform: translate(0, 0);
+    }
+}
+.hide.accordion {
+    .accordion-body {
+        transition: all 0.4s ease-in-out;
+        transform: translate(0, -100%);
+    }
+}

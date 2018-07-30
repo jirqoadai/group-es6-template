@@ -1,0 +1,33 @@
+.panel-line {
+    display: flex;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    position: relative;
+    width: 100%;
+    align-content: space-between;
+    .panel-line-icon {
+        display: relative;
+    }
+    .panel-line-body {
+        display: relative;
+    }
+    .panel-line-foot {
+        width: 13px;
+        &::after {
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-width: 2px 2px 0 0;
+            border-color: #C8C8CD;
+            border-style: solid;
+            /* -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0); */
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: relative;
+            top: -2px;
+            position: absolute;
+            top: 50%;
+            margin-top: -4px;
+            right: 2px;
+        }
+    }
+}

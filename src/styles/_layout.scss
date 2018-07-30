@@ -1,0 +1,55 @@
+.container {
+    padding: 15px;
+}
+.layout-center {
+    text-align: center;
+    margin: 0 auto;
+}
+.layout-left {
+    text-align: left;
+}
+.layout-right {
+    text-align: right;
+}
+
+// 容器布局
+.v-part {
+    margin: 15px 0;
+}
+.v-top-part {
+    margin-top: 15px;
+}
+.v-bottom-part {
+    margin-bottom: 15px;
+}
+.h-part {
+    margin: 0 15px;
+}
+.vh-part {
+    margin: 15px;
+}
+.v-span {
+    padding: 15px 0;
+}
+.h-span {
+    padding: 0 8px;
+}
+.vh-span {
+    padding: 8px;
+}
+
+// 容器flext布局
+.box {
+    padding: 15px;
+}
+.flex-box {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nowrap {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
