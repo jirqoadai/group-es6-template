@@ -27,6 +27,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		- dot menu（原点）
 		- 手风琴
 		- 底部悬浮&可滑动&自定义宽度
+	#### 基础组件
+		- 文章
+			- 分页
+			- footer页脚
+		- panel
+			- 新闻卡片
+			- 图片+简介
+			- 淘宝商品
+			- 评论卡片
 	#### picker
 		- select
 		- 级联picker
@@ -39,11 +48,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		-  点击加载
 		- 下拉刷新
 		- 上滑加载
-	#### panel
-		- 新闻卡片
-		- 图片+简介
-		- 淘宝商品
-		- 评论卡片
 	#### container
 		- 封面swiper
 		- 卡片swiper
@@ -59,11 +63,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 		- viewport百分比
 		- vw布局
 		- rem布局
-	#### 文本样式
-		- 文章
-		- 分页
-		- 文章
-		- 页脚
 	#### 表单
 		- 搜索
 		- 输入框

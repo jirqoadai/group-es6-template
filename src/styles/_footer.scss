@@ -1,11 +1,7 @@
 .footer {
-    position: fixed;
     z-index: 1;
     margin: 0 auto;
     width: 100%;
-    bottom: 0.5em;
-    left: 0;
-    right: 0;
     font-size: 14px;
     text-align: center;
     .footer-link {
@@ -20,6 +16,6 @@
     }
     .footer-text {
         font-size: 12px;
-        padding: 0.34em;
+        padding: 1em;
     }
 }

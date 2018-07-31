@@ -16,7 +16,7 @@ $(() => {
       $(e.currentTarget).parent().addClass('hide');
       $(e.currentTarget).parent().removeClass('active');
     } else {
-      $('.accordion').parent().removeClass('active');
+      $('.accordion').removeClass('active');
       $(e.currentTarget).parent().addClass('active');
       $(e.currentTarget).parent().removeClass('hide');
     }
